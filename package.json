@@ -1,5 +1,5 @@
 {
-  "name": "personalprojects-web-myportfolio",
+  "name": "personal-web-myportfolio",
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
@@ -11,19 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SmilingAustrich/PersonalProjects-WEB-MyPortfolio.git"
+    "url": "git+https://github.com/SmilingAustrich/personal-web-myportfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SmilingAustrich/PersonalProjects-WEB-MyPortfolio/issues"
+    "url": "https://github.com/SmilingAustrich/personal-web-myportfolio/issues"
   },
-  "homepage": "https://github.com/SmilingAustrich/PersonalProjects-WEB-MyPortfolio#readme",
+  "homepage": "/",
   "dependencies": {
+    "framer-motion": "^11.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-icons": "^5.4.0",
+    "react-scripts": "^3.0.1",
+    "react-scroll": "^1.9.0"
   },
   "browserslist": {
     "production": [

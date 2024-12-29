@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles can go here */
-body {
-    font-family: 'Arial', sans-serif;
+.glow {
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
+}
+
+button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+    background-color: #39FF14; /* Neon Green */
 }
