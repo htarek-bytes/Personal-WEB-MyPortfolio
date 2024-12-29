@@ -25,7 +25,7 @@ export default function Navbar() {
                 {/* Logo / Personal Branding */}
                 <div className="flex items-center space-x-6">
                     <h1 className="text-3xl font-bold text-neonBlue flex">
-                        <span className="text-white">trk.Init(</span>
+                        <span className="text-white">trk.init(</span>
                         <span className="text-neonBlue animate-pulse">Portfolio</span>
                         <span className="text-white">)</span>
                     </h1>
