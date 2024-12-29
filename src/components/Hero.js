@@ -14,7 +14,7 @@ export default function Hero() {
                 className="text-center max-w-2xl"
             >
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                    Hi, I am <span className="font-extrabold mb-6 glow">Tarek.</span>
+                    Hi,I am <span className="font-extrabold mb-6 glow">Tarek.</span>
                 </h1>
                 <p className="text-lg md:text-xl mb-8">
                     aka <span className="text-neonGreen glow animate-neonPulse">trk </span>

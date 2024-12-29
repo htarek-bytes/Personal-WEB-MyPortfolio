@@ -29,7 +29,7 @@ export default function Navbar() {
                         <span className="text-neonBlue animate-pulse">Portfolio</span>
                         <span className="text-white">)</span>
                     </h1>
-                    <p className="text-white text-sm ml-4 pl-5">BsC. Computer Science | Professional boredom killer</p> {/* Added margin left */}
+                    <p className="text-white text-sm ml-4 pl-5">Tarek Hireche | BsC. Computer Science</p> {/* Added margin left */}
                 </div>
 
                 {/* Navigation Links */}
