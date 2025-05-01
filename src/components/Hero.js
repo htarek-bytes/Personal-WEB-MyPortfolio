@@ -92,7 +92,15 @@ export default function Hero() {
                 </h1>
 
                 <div className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 relative inline-block w-full">
-          <span>
+                    <div className="mb-6">
+  <span className="inline-block bg-neonGreen text-black font-semibold text-sm sm:text-base px-4 py-2 rounded-full animate-pulse shadow-md">
+    {language === 'en'
+        ? 'Available for a Fall 2025 internship'
+        : 'Disponible pour un stage à l’automne ou hiver 2025'}
+  </span>
+                    </div>
+
+                    <span>
             {translations[language].hero.aka}{' '}
               <span className="text-neonGreen glow animate-neonPulse">
               soymyo{' '}
