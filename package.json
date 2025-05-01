@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/SmilingAustrich/personal-web-myportfolio/issues"
   },
-  "homepage": "https://SmilingAustrich.github.io/Personal-WEB-MyPortfolio",
+  "homepage": ".",
   "dependencies": {
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
