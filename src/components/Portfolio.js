@@ -9,6 +9,30 @@ export default function Portfolio() {
     // Dynamic project list based on the current language
     const getAllProjects = () => [
         {
+            title: language === 'en'
+                ? 'Smart Waitroom Management System'
+                : 'Gestion intelligente de salle d’attente',
+            description: language === 'en'
+                ? 'A web app to manage clinic and hospital waitrooms: view real-time wait times, patient flow, and receive alerts when it’s your turn.'
+                : 'Une application web pour gérer les salles d’attente en clinique ou hôpital : visualisation en temps réel, suivi patient, alertes personnalisées.',
+            techs: ['Java', 'Spring Boot', 'PostgreSQL', 'Leaflet.js', 'HTMX'],
+            videoLink: 'https://www.youtube.com/watch?v=IZZnpzCg5Fw',
+            features: language === 'en'
+                ? [
+                    'Live hospital map with estimated wait times',
+                    'Patient registration and SMS alerts',
+                    'Admin interface for staff',
+                    'Severity-based triage'
+                ]
+                : [
+                    'Carte interactive des hôpitaux avec temps d’attente estimés',
+                    'Inscription des patients et alertes par SMS',
+                    'Interface admin pour le personnel',
+                    'Triage basé sur la sévérité'
+                ],
+        },
+
+        {
             title: language === 'en' ? 'Ma Ville - Work Management App' : 'Ma Ville - Application de Gestion des Travaux',
             description: language === 'en'
                 ? 'Innovative application developed in Java to streamline public and private work management in Montreal.'

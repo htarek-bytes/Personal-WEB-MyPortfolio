@@ -16,6 +16,13 @@ const projects = [
         link: 'https://github.com/example/sudoku-solver',
         liveDemo: null,
     },
+    {
+        title: 'Smart Waitroom Management for Clinics and Hospitals',
+        description: 'A web platform to visualize nearby clinics and hospitals, manage waiting rooms in real-time, and notify patients when their turn is approaching.',
+        techStack: ['Java', 'Spring Boot', 'PostgreSQL', 'Leaflet.js', 'HTMX'],
+        link: 'https://github.com/SmilingAustrich/UdeM-IFT2935-Project', // replace with your actual repo
+        liveDemo: 'null', // or null if not yet live
+    },
 ];
 
 export default function ProjectsGrid() {
