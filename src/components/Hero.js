@@ -95,7 +95,7 @@ export default function Hero() {
                     <div className="mb-6">
   <span className="inline-block bg-neonGreen text-black font-semibold text-sm sm:text-base px-4 py-2 rounded-full animate-pulse shadow-md">
     {language === 'en'
-        ? 'Available for a Fall 2025 internship'
+        ? 'Available for a Fall or winter 2025 internship'
         : 'Disponible pour un stage à l’automne ou hiver 2025'}
   </span>
                     </div>
