@@ -1,251 +1,33 @@
+/* Import the "Share Tech Mono" font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* General body styles */
 body {
-    background: radial-gradient(circle, #1F2833, #0B0C10); /* Space-like background */
-    color: white;
-    font-family: 'Roboto Mono', monospace; /* Futuristic font */
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: auto; /* Allow scrolling */
-    position: relative;
-    cursor: none; /* Hide the default cursor */
-    overflow-x: hidden;
+    background-color: #050505;
+    color: #e0e0e0;
+    font-family: 'Share Tech Mono', monospace; /* Apply the font globally */
+    overflow-x: hidden; /* Prevent unwanted horizontal scrolling */
 }
 
-/* Glowing text effect */
-.glow {
-    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF;
-    transition: text-shadow 0.3s ease, color 0.3s ease;
-}
-
-.glow:hover {
-    color: #39FF14; /* Neon Green text color */
-    text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14, 0 0 40px #39FF14;
-}
-
-/* Button hover effect */
-button {
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #39FF14;
-    background-color: #00FFFF;
-    color: #121212;
-}
-
-/* Binary Rain Canvas */
-#binaryCanvas {
+/* CRT SCANLINE OVERLAY - Creates the monitor effect */
+body::after {
+    content: " ";
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;
-    pointer-events: none;
-    opacity: 0.2;
-    overflow: hidden;
-}
-
-/* Hover effect for navbar items */
-.navbar-item {
-    position: relative;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-/* Smooth and subtle neon glow effect on hover */
-.navbar-item:hover {
-    color: #00FFFF; /* Neon Blue */
-    text-shadow: 0 0 8px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #39FF14, 0 0 40px #39FF14; /* Glow effect */
-    transform: scale(1.05); /* Slightly enlarge the item on hover */
-}
-
-/* Optional: For the active navbar item */
-.navbar-item.active {
-    color: #39FF14; /* Neon Green */
-    text-shadow: 0 0 12px #39FF14, 0 0 24px #39FF14;
-}
-
-/* Highlighted neon effects */
-
-/* Blue Highlight */
-.neon-highlight-blue {
-    position: relative;
-    color: #00FFFF; /* Neon Blue */
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #00FFFF, 0 0 15px #00FFFF; /* Subtle glow effect */
-}
-
-.neon-highlight-blue:hover {
-    color: #39FF14; /* Neon Green on hover */
-    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #39FF14, 0 0 40px #39FF14; /* Slightly more intense on hover */
-}
-
-/* White Highlight */
-.neon-highlight-white {
-    position: relative;
-    color: #ffffff; /* White */
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff; /* Subtle glow effect */
-}
-
-/* Add glow effect to the process text */
-.neon-highlight-green {
-    color: #39FF14;
-    text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;
-}
-
-.neon-highlight-green:hover {
-    color: #FFFFFF;
-    text-shadow: 0 0 15px #39FF14, 0 0 30px #39FF14;
-}
-
-.neon-highlight-white:hover {
-    color: #39FF14; /* Neon Green on hover */
-    text-shadow: 0 0 8px #ffffff, 0 0 20px #ffffff, 0 0 30px #39FF14, 0 0 40px #39FF14; /* Slightly more intense on hover */
-}
-
-/* Yellow Highlight */
-.neon-highlight-yellow {
-    position: relative;
-    color: #e1e130; /* Neon Yellow */
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #FFFF00, 0 0 15px #FFFF00; /* Subtle glow effect */
-}
-
-.neon-highlight-yellow:hover {
-    color: #39FF14; /* Neon Green on hover */
-    text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #39FF14, 0 0 40px #39FF14; /* Slightly more intense on hover */
-}
-
-/* Purple Highlight */
-.neon-highlight-purple {
-    position: relative;
-    color: #9b59b6; /* Neon Purple */
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #9b59b6, 0 0 15px #9b59b6; /* Subtle glow effect */
-}
-
-.neon-highlight-purple:hover {
-    color: #39FF14; /* Neon Green on hover */
-    text-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6, 0 0 30px #39FF14, 0 0 40px #39FF14; /* Slightly more intense on hover */
-}
-
-/* Purple Highlight */
-.neon-highlight-blue-royal {
-    position: relative;
-    color: #2022b5; /* Neon Purple */
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #9b59b6, 0 0 15px #9b59b6; /* Subtle glow effect */
-}
-
-.neon-highlight-blue-royal:hover {
-    color: #39FF14; /* Neon Green on hover */
-    text-shadow: 0 0 10px #353695, 0 0 20px #353695, 0 0 30px #39FF14, 0 0 40px #39FF14; /* Slightly more intense on hover */
-}
-
-/* Red Highlight */
-.neon-highlight-red {
-    position: relative;
-    color: #e14545; /* Neon Red */
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 5px #FF0000, 0 0 15px #FF0000; /* Subtle glow effect */
-}
-
-.neon-highlight-red:hover {
-    color: #39FF14; /* Neon Green on hover */
-    text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #39FF14, 0 0 40px #39FF14; /* Slightly more intense on hover */
-}
-
-/* Tailwind smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Fade-in animation */
-.animate-fadeIn {
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-/* Typing animation */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 85%;
-    }
-}
-
-/* Typing effect */
-.typing-animation {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap; /* Keep the text in one line */
-    width: 0;
-    border-right: 3px solid #fff; /* Simulate the cursor */
-    animation: typing 3s steps(30) 1s forwards; /* Typing animation with letter-by-letter effect */
-}
-
-/* Blinking cursor */
-@keyframes blinking-cursor {
-    0% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: white;
-    }
-    100% {
-        border-color: transparent;
-    }
-}
-
-.blinking-cursor {
-    animation: blinking-cursor 1s step-start infinite;
-}
-
-/* Show the overlay when active */
-#fake-overlay.active {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-/* Darker background for the overlay */
-#fake-overlay {
-    background-color: rgba(0, 0, 0, 0.9);  /* Darker overlay */
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
     z-index: 50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none; /* Allows clicks to pass through */
 }
 
-/* Glitch Effect */
-@keyframes glitch {
-    0% { transform: translateX(-2px); }
-    25% { transform: translateX(2px); }
-    50% { transform: translateX(-2px); }
-    75% { transform: translateX(2px); }
-    100% { transform: translateX(0); }
+/* Utility class for glowing text */
+.glow-text {
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.7);
 }
-
