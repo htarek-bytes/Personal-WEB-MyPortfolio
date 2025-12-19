@@ -228,7 +228,7 @@ function App() {
                     github.com/SmilingAustrich
                   </span>
                             </a>
-                            <a href="https://www.linkedin.com/in/tarek-hireche-115727292" target="_blank" rel="noreferrer" className="block group">
+                            <a href="https://www.linkedin.com/in/hirechetarek" target="_blank" rel="noreferrer" className="block group">
                                 <span className="text-gray-500 block mb-1">LINKED_NET:</span>
                                 <span className="text-white group-hover:text-phosphor-green transition-colors">
                     linkedin.com/in/htarek
