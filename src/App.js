@@ -205,6 +205,9 @@ function App() {
                             <li className="flex justify-between text-gray-400"><span>PROLOG / LOGIC</span> <span className="text-alert-amber">READY</span></li>
                             <li className="w-full bg-gray-800 h-1 mb-2"><div className="bg-alert-amber h-1 w-[75%]"></div></li>
 
+                            <li className="flex justify-between text-gray-400"><span>C++</span> <span className="text-phosphor-green">READY</span></li>
+                            <li className="w-full bg-gray-800 h-1 mb-2"><div className="bg-phosphor-green h-1 w-[90%]"></div></li>
+
                             <li className="flex justify-between text-gray-400"><span>JAVA / SQL</span> <span className="text-system-cyan">LOADED</span></li>
                             <li className="w-full bg-gray-800 h-1 mb-2"><div className="bg-system-cyan h-1 w-[80%]"></div></li>
                         </ul>
