@@ -252,7 +252,7 @@ function App() {
                             <div>TYPE: <span className="text-gray-300">READ_ONLY</span></div>
                             <div>PERM: <span className="text-phosphor-green animate-pulse">PUBLIC</span></div>
                         </div>
-                        <a href="/resume.pdf" target="_blank" className="block w-full bg-phosphor-green text-black font-bold text-center py-3 text-xs hover:bg-white transition-colors tracking-widest">
+                        <a href="/resume_htarek.pdf" target="_blank" className="block w-full bg-phosphor-green text-black font-bold text-center py-3 text-xs hover:bg-white transition-colors tracking-widest">
                             > EXECUTE_FILE_TRANSFER
                         </a>
                     </div>
